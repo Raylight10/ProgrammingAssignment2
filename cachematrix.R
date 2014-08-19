@@ -5,7 +5,7 @@ that is different from the current environment. Below are two functions
 that are used to create a special object that stores a numeric matrix and caches its inverse.
 The inverse of matrix can be calculated 'solve' function in R package.
 
-## makeCacheMatrix function creates a special object that stores a numeric matrix,
+## 'makeCacheMatrix' function creates a special object that stores a numeric matrix,
 which is really a list containing a function: 
 1.  set: set the value of the matrix
 2.  get: get the value of the matrix
@@ -27,7 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
          getInverse= getInverse)
 }
 
-##  'CacheSolve' do the following jobs:
+##  'CacheSolve' function do the following jobs:
 " - calculates the inverse of the special 'matrix' created with the above function. 
   - checks to see first if the inverse of matrix is already calculated. 
   - if the inverse of matrix is already calculated, it gets inverse of matrix from 
